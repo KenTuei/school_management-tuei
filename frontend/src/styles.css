@@ -1,14 +1,11 @@
-* { box-sizing: border-box; }
-body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; margin: 0; background: #0b1020; color: #e8ecff; }
-a { color: #a8c1ff; text-decoration: none; }
-.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-.card { background: #111837; border: 1px solid #1b2350; border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-.btn { background: #2b6bff; border: none; color: white; padding: 8px 14px; border-radius: 999px; cursor: pointer; }
-.input { width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid #2a355f; background: #0f1530; color: #e8ecff; }
-.table { width: 100%; border-collapse: collapse; }
-.table th, .table td { padding: 10px; border-bottom: 1px solid #263165; }
-.pill { padding: 4px 10px; border-radius: 999px; background: #1a244d; color: #b7c6ff; border: 1px solid #2a3a78; }
-.header { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
-.sub { opacity: .8; }
-.stat { font-size: 24px; font-weight: 700; }
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0.3; }
+  50% { opacity: 0.6; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+
+.animate-floatUp {
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

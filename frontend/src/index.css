@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom particle animation */
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0.5); opacity: 0.3; }
+  50% { opacity: 0.6; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  animation: floatUp linear infinite;
+}
